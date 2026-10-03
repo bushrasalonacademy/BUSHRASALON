@@ -1,0 +1,10 @@
+{
+  "description": "Experience premium hair, beauty, and grooming services at Bushra’s Salon & Academy in Indore, with a sophisticated online booking platform and elegant design.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
