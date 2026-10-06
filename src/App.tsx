@@ -17,7 +17,6 @@ import { PhotoGallerySection } from './components/PhotoGallerySection';
 import { FaqSection } from './components/FaqSection';
 import { FooterSection } from './components/FooterSection';
 import { MobileBottomNav } from './components/MobileBottomNav';
-import { FloatingActions } from './components/FloatingActions';
 import { RealtimeBookingModal } from './components/RealtimeBookingModal';
 import { AdminDashboardModal } from './components/AdminDashboardModal';
 import { ReviewModal } from './components/ReviewModal';
@@ -350,9 +349,6 @@ export default function App() {
         onOpenAdmin={handleOpenAdmin}
         onSelectTab={handleTabChange}
       />
-
-      {/* Desktop/Tablet Floating WhatsApp & Instant Book */}
-      <FloatingActions onOpenBooking={() => handleOpenBooking()} />
 
       {/* Mobile Fixed Bottom Navigation Bar */}
       <MobileBottomNav onOpenShare={() => setShareModalOpen(true)} />
