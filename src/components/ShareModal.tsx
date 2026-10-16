@@ -12,7 +12,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose }) => {
 
   const currentUrl = window.location.href;
   const address =
-    'Plot No. 17, The Hub, Scheme No 78, Part II, Vijay Nagar, Indore, Madhya Pradesh, 452010';
+    'The hub, plot 17 above Lig Maggie near 7coursemart, scheme 78, Indore';
 
   const handleCopy = () => {
     navigator.clipboard.writeText(currentUrl);

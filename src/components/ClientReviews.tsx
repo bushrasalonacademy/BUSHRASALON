@@ -145,7 +145,7 @@ export const ClientReviews: React.FC<ClientReviewsProps> = ({ reviews, onReviewA
                   <input
                     type="text"
                     required
-                    placeholder="e.g. Sonal Verma"
+                    placeholder="e.g. Kana Bakawale"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                   />

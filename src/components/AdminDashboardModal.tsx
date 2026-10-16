@@ -280,7 +280,7 @@ export const AdminDashboardModal: React.FC<AdminDashboardModalProps> = ({
   };
 
   const getWhatsAppBookingLink = (b: Booking) => {
-    const text = `Hello ${b.customer_name}! Your appointment for *${b.service_title}* at *Bushra's Salon & Academy* on *${b.booking_date}* at *${b.booking_time}* is *CONFIRMED*. Location: Plot No. 17, The Hub, Scheme No 78, Vijay Nagar, Indore. We look forward to welcoming you!`;
+    const text = `Hello ${b.customer_name}! Your appointment for *${b.service_title}* at *Bushra's Salon & Academy* on *${b.booking_date}* at *${b.booking_time}* is *CONFIRMED*. Location: The hub, plot 17 above Lig Maggie near 7coursemart, scheme 78, Indore. We look forward to welcoming you!`;
     const cleanPhone = b.customer_phone.replace(/\D/g, '');
     return `https://wa.me/91${cleanPhone.length === 10 ? cleanPhone : cleanPhone.slice(-10)}?text=${encodeURIComponent(text)}`;
   };
@@ -1572,7 +1572,7 @@ export const AdminDashboardModal: React.FC<AdminDashboardModalProps> = ({
                       <input
                         type="text"
                         required
-                        placeholder="e.g. Sonal Verma"
+                        placeholder="e.g. Kana Bakawale"
                         value={newReviewData.author_name}
                         onChange={(e) => setNewReviewData({ ...newReviewData, author_name: e.target.value })}
                         className="w-full bg-gray-50 border rounded-xl p-2"

@@ -25,7 +25,7 @@ N:Academy;Bushra's Salon;;;
 ORG:Bushra's Salon & Academy
 TEL;TYPE=CELL,VOICE:+919630204104
 EMAIL:bushra.salon.academy@gmail.com
-ADR;TYPE=WORK:;;Plot No. 17, The Hub, Scheme 78;Vijay Nagar, Indore;Madhya Pradesh;452010;India
+ADR;TYPE=WORK:;;The hub, plot 17 above Lig Maggie near 7coursemart;Scheme 78, Indore;Madhya Pradesh;452010;India
 URL:https://bushrasalon.com
 NOTE:Luxury Hair, Skin, Makeup, Nails & Beauty Academy in Indore
 END:VCARD`;
@@ -76,27 +76,57 @@ END:VCARD`;
             <p className="text-xs sm:text-sm text-gray-600 flex items-center gap-2 pt-1 font-medium">
               <i className="fa-solid fa-location-dot text-[#c88132] text-sm flex-shrink-0"></i>
               <span>
-                Plot No. 17, <strong className="text-amber-950 font-bold bg-amber-100/90 px-1.5 py-0.5 rounded border border-amber-300/80">THE HUB</strong>, Scheme No 78, Part II, Vijay Nagar, Indore
+                The hub, plot 17 above Lig Maggie near 7coursemart, scheme 78, Indore
               </span>
             </p>
           </div>
 
-          {/* Green Google Rating Badge on Top Right */}
-          <div className="flex items-center gap-3 flex-shrink-0 self-start md:self-center bg-white p-3.5 rounded-2xl border border-gray-200/80 shadow-xs">
-            <div className="bg-[#15803d] text-white font-extrabold text-lg px-3 py-1.5 rounded-xl flex items-center gap-1.5 shadow-xs">
-              <span>4.8</span>
-              <i className="fa-solid fa-star text-xs"></i>
-            </div>
-            <div className="flex flex-col leading-tight">
-              <div className="flex items-center gap-1 text-amber-500 text-xs">
-                <i className="fa-solid fa-star"></i>
-                <i className="fa-solid fa-star"></i>
-                <i className="fa-solid fa-star"></i>
-                <i className="fa-solid fa-star"></i>
-                <i className="fa-solid fa-star-half-stroke"></i>
+          {/* Rating Badges Stack (Bushra's + Marie Claire Paris) */}
+          <div className="flex flex-col gap-2.5 flex-shrink-0 self-start md:self-center">
+            {/* Bushra's Salon 4.9 Google Rating Badge */}
+            <div 
+              onClick={handleOpenReviewsTab}
+              className="flex items-center gap-3 bg-white p-3 rounded-2xl border border-gray-200/80 shadow-xs cursor-pointer hover:border-[#c88132] transition-colors"
+              title="Click to view all 121 Google Reviews"
+            >
+              <div className="bg-[#15803d] text-white font-extrabold text-lg px-3 py-1.5 rounded-xl flex items-center gap-1.5 shadow-xs">
+                <span>4.9</span>
+                <i className="fa-solid fa-star text-xs"></i>
               </div>
-              <span className="text-xs font-bold text-gray-900 mt-0.5">227+ Google Reviews</span>
-              <span className="text-[10px] text-gray-500 font-medium">99% Client Satisfaction</span>
+              <div className="flex flex-col leading-tight">
+                <div className="flex items-center gap-1 text-amber-500 text-xs">
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                </div>
+                <span className="text-xs font-bold text-gray-900 mt-0.5">121 Google Reviews</span>
+                <span className="text-[10px] text-[#15803d] font-bold">✓ Verified on Google Maps</span>
+              </div>
+            </div>
+
+            {/* Marie Claire Paris Salon Review Badge Just Below */}
+            <div 
+              onClick={handleOpenReviewsTab}
+              className="flex items-center gap-3 bg-gradient-to-r from-amber-50/60 to-white p-2.5 rounded-2xl border border-amber-300/80 shadow-2xs cursor-pointer hover:border-[#c88132] transition-colors"
+              title="Click to view Marie Claire Paris Salon 271 Reviews"
+            >
+              <div className="bg-[#2b161b] text-amber-300 font-extrabold text-sm px-2.5 py-1 rounded-xl flex items-center gap-1 shadow-xs">
+                <span>4.9</span>
+                <i className="fa-solid fa-star text-[10px]"></i>
+              </div>
+              <div className="flex flex-col leading-tight">
+                <div className="flex items-center gap-1 text-amber-500 text-[11px]">
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                </div>
+                <span className="text-xs font-bold text-gray-900 mt-0.5">271 Google Reviews (Marie Claire)</span>
+                <span className="text-[10px] text-gray-500 font-medium">Formerly Marie Claire Paris Salon, Indore</span>
+              </div>
             </div>
           </div>
         </div>

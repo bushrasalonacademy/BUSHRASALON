@@ -50,6 +50,7 @@ export interface Review {
   content: string;
   avatar?: string;
   is_approved: boolean;
+  source?: 'google' | 'marie_claire';
 }
 
 export interface Inquiry {

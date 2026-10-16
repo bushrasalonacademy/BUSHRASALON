@@ -2,12 +2,12 @@ import React from 'react';
 
 export const ReviewHighlightsSection: React.FC = () => {
   const highlights = [
-    { label: '★ 4.8 Google Rated', count: '227+ Reviews' },
+    { label: '★ 4.9 Google Rated', count: '121 Reviews' },
+    { label: '★ 4.9 Marie Claire Legacy', count: '271 Reviews' },
     { label: '✨ Best Balayage & Hair Color', count: '98% Positive' },
     { label: '💧 Hydra-Facial Glow', count: 'Top Pick' },
     { label: '👑 HD Bridal Makeup Expert', count: '500+ Brides' },
     { label: '💅 Luxury 3D Gel Nail Art', count: 'Master Artists' },
-    { label: '🌿 100% Sanitized & Hygienic', count: 'Verified' },
   ];
 
   return (

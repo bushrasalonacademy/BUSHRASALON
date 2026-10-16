@@ -126,38 +126,35 @@ export const FooterSection: React.FC<FooterSectionProps> = ({
           {/* Column 4: Contact Info */}
           <div>
             <h4 className="text-sm font-bold text-white mb-4 border-b border-gray-700/80 pb-2 uppercase tracking-wider">
-              Contact &amp; Campuses
+              Contact &amp; Location
             </h4>
             <div className="space-y-3.5 text-xs">
               <div className="flex items-start gap-2.5">
-                <i className="fa-solid fa-store text-sm text-[#c88132] mt-0.5"></i>
+                <i className="fa-solid fa-location-dot text-sm text-[#c88132] mt-0.5"></i>
                 <div>
-                  <span className="block font-semibold text-gray-200">Indore Salon Hub:</span>
+                  <span className="block font-semibold text-gray-200">Address:</span>
                   <span className="text-gray-300 leading-relaxed block">
-                    Plot 17, <strong className="text-amber-400 font-bold bg-amber-950/60 px-1 py-0.5 rounded">THE HUB</strong>, Scheme 78, Vijay Nagar, Indore
+                    The hub, plot 17 above Lig Maggie near 7coursemart, scheme 78, Indore
                   </span>
-                  <a href={`tel:${SALON_INFO.phone}`} className="text-[#c88132] hover:text-white font-bold block mt-0.5">
-                    +91 {SALON_INFO.phoneDisplay}
+                </div>
+              </div>
+
+              <div className="flex items-start gap-2.5">
+                <i className="fa-solid fa-phone text-sm text-[#c88132] mt-0.5"></i>
+                <div>
+                  <span className="block font-semibold text-gray-200">Direct Calling &amp; WhatsApp:</span>
+                  <a href={`tel:${SALON_INFO.phone}`} className="text-[#c88132] hover:text-white font-bold block mt-0.5 text-sm">
+                    {SALON_INFO.phoneDisplay}
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-start gap-2.5 pt-2 border-t border-gray-800">
-                <i className="fa-solid fa-graduation-cap text-sm text-[#c88132] mt-0.5"></i>
+              <div className="flex items-start gap-2.5">
+                <i className="fa-solid fa-envelope text-sm text-[#c88132] mt-0.5"></i>
                 <div>
-                  <span className="block font-semibold text-gray-200">Academy Admissions (Indore Hub):</span>
-                  <span className="text-gray-300 leading-relaxed block">
-                    Plot 17, <strong className="text-amber-400 font-bold bg-amber-950/60 px-1 py-0.5 rounded">THE HUB</strong>, Scheme 78, Vijay Nagar, Indore
-                  </span>
-                  <div className="text-gray-300 font-medium space-x-1.5 mt-0.5">
-                    <a href="tel:8319504104" className="hover:text-amber-300 text-white font-bold">8319504104</a>
-                    <span>·</span>
-                    <a href="tel:8319527707" className="hover:text-amber-300 text-white font-bold">8319527707</a>
-                    <span>·</span>
-                    <a href="tel:07554057210" className="hover:text-amber-300">0755 4057210</a>
-                  </div>
-                  <a href="mailto:info@elanbeautyacademy.in" className="text-[#c88132] hover:text-white block text-[11px] mt-0.5">
-                    info@elanbeautyacademy.in
+                  <span className="block font-semibold text-gray-200">Official Email:</span>
+                  <a href={`mailto:${SALON_INFO.email}`} className="text-gray-300 hover:text-white block mt-0.5">
+                    {SALON_INFO.email}
                   </a>
                 </div>
               </div>

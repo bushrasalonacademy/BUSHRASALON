@@ -167,7 +167,7 @@ export const GalleryModal: React.FC<GalleryModalProps> = ({
             className="text-xs font-bold text-[#2b161b] hover:text-[#c88132] flex items-center gap-1.5"
           >
             <i className="fa-solid fa-phone text-[#c88132]"></i>
-            <span>+91 96302 04104 / +91 90395 56866</span>
+            <span>+91 96302 04104</span>
           </a>
         </div>
 

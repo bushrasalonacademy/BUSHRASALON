@@ -75,9 +75,7 @@ export const AcademySection: React.FC = () => {
     }
   };
 
-  const academyPhones = SALON_INFO.academyCampus?.phones || ['8319504104', '8319527707'];
-  const academyLandline = SALON_INFO.academyCampus?.landline || '0755 4057210';
-  const primaryPhone = academyPhones[0];
+  const primaryPhone = SALON_INFO.phone;
 
   return (
     <div id="academy" className="salon-card-box bg-gradient-to-br from-[#fcfbf9] via-white to-amber-50/25 border-amber-200/80 shadow-sm">
@@ -327,10 +325,10 @@ export const AcademySection: React.FC = () => {
             </div>
             <div>
               <span className="text-[11px] font-bold text-amber-300 uppercase tracking-wider block">
-                Academy Campus (Indore)
+                Academy Location (Indore)
               </span>
               <p className="text-xs sm:text-sm font-semibold text-gray-100 mt-0.5">
-                Plot No. 17, The Hub, Scheme No 78, Vijay Nagar, Indore
+                The hub, plot 17 above Lig Maggie near 7coursemart, scheme 78, Indore
               </p>
               <span className="text-[11px] text-gray-300">Central India's Premier Certified Beauty Academy</span>
             </div>
@@ -343,16 +341,16 @@ export const AcademySection: React.FC = () => {
             </div>
             <div>
               <span className="text-[11px] font-bold text-amber-300 uppercase tracking-wider block">
-                Direct Helplines
+                Direct Calling &amp; WhatsApp
               </span>
-              <div className="flex flex-wrap gap-x-2 gap-y-0.5 mt-0.5 text-xs sm:text-sm font-bold text-white">
-                <a href="tel:8319504104" className="hover:text-amber-300 transition-colors">8319504104</a>
-                <span className="text-gray-400">·</span>
-                <a href="tel:8319527707" className="hover:text-amber-300 transition-colors">8319527707</a>
+              <div className="mt-0.5 text-xs sm:text-sm font-bold text-white">
+                <a href={`tel:${SALON_INFO.phone}`} className="hover:text-amber-300 transition-colors text-base font-extrabold">
+                  {SALON_INFO.phoneDisplay}
+                </a>
               </div>
-              <div className="text-[11px] text-gray-300 mt-0.5">
-                <span>Landline: </span>
-                <a href="tel:07554057210" className="hover:text-amber-300 font-semibold text-white">0755 4057210</a>
+              <div className="text-[11px] text-emerald-300 mt-0.5 flex items-center gap-1">
+                <i className="fa-brands fa-whatsapp text-xs"></i>
+                <span>Instant WhatsApp Admission Support</span>
               </div>
             </div>
           </div>
@@ -366,8 +364,8 @@ export const AcademySection: React.FC = () => {
               <span className="text-[11px] font-bold text-amber-300 uppercase tracking-wider block">
                 Official Email
               </span>
-              <a href="mailto:info@elanbeautyacademy.in" className="text-xs sm:text-sm font-semibold text-gray-100 hover:text-amber-300 transition-colors block mt-0.5">
-                info@elanbeautyacademy.in
+              <a href={`mailto:${SALON_INFO.email}`} className="text-xs sm:text-sm font-semibold text-gray-100 hover:text-amber-300 transition-colors block mt-0.5">
+                {SALON_INFO.email}
               </a>
               <span className="text-[11px] text-gray-300">Fast Response · Batch Counselling</span>
             </div>

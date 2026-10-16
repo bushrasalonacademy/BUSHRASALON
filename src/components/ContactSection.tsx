@@ -78,9 +78,9 @@ export const ContactSection: React.FC = () => {
                   <MapPin size={20} className="gold-icon" />
                 </div>
                 <div>
-                  <h4 className="contact-item-title">Salon Address</h4>
+                  <h4 className="contact-item-title">Salon &amp; Academy Address</h4>
                   <p className="contact-item-value">{SALON_INFO.location}</p>
-                  <p className="contact-item-note">The Hub, Scheme No 78, Vijay Nagar, Indore</p>
+                  <p className="contact-item-note">Above Lig Maggie near 7coursemart, Scheme 78, Indore</p>
                 </div>
               </div>
 
@@ -102,7 +102,7 @@ export const ContactSection: React.FC = () => {
                 <div>
                   <h4 className="contact-item-title">WhatsApp Quick Chat</h4>
                   <a 
-                    href={`https://wa.me/919630204104?text=${encodeURIComponent("Hello Bushra's Salon! I would like to inquire about your services.")}`}
+                    href={`https://wa.me/91${SALON_INFO.phone}?text=${encodeURIComponent("Hello Bushra's Salon! I would like to inquire about your services.")}`}
                     target="_blank"
                     rel="noreferrer"
                     className="whatsapp-inline-btn"
@@ -112,20 +112,19 @@ export const ContactSection: React.FC = () => {
                 </div>
               </div>
 
-              {/* Academy Campus & Helpline */}
+              {/* Official Email & Inquiry */}
               <div className="contact-item" style={{ borderTop: '1px solid #f1f5f9', paddingTop: '16px' }}>
                 <div className="contact-icon-bubble" style={{ background: '#fdf6ed' }}>
                   <Sparkles size={20} className="gold-icon" />
                 </div>
                 <div>
-                  <h4 className="contact-item-title">Academy Admissions (Indore Hub)</h4>
-                  <p className="contact-item-value">The Hub, Scheme No 78, Vijay Nagar, Indore</p>
-                  <p className="contact-item-note">
-                    Helplines: <a href="tel:8319504104" className="highlight-link">8319504104</a> / <a href="tel:8319527707" className="highlight-link">8319527707</a> / 0755 4057210
-                  </p>
-                  <a href="mailto:info@elanbeautyacademy.in" className="contact-item-note highlight-link" style={{ display: 'block', marginTop: '2px' }}>
-                    info@elanbeautyacademy.in
+                  <h4 className="contact-item-title">Official Email &amp; Admissions</h4>
+                  <a href={`mailto:${SALON_INFO.email}`} className="contact-item-value highlight-link" style={{ fontSize: '13px' }}>
+                    {SALON_INFO.email}
                   </a>
+                  <p className="contact-item-note">
+                    Helpline: <a href={`tel:${SALON_INFO.phone}`} className="highlight-link">{SALON_INFO.phoneDisplay}</a>
+                  </p>
                 </div>
               </div>
             </div>

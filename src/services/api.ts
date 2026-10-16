@@ -33,7 +33,7 @@ function setLocal<T>(key: string, val: T): void {
   }
 }
 
-// Purge any legacy sample dummy data
+// Purge any legacy sample dummy data or fake reviews
 try {
   if (typeof window !== 'undefined') {
     const cachedBks = getLocal<Booking[]>(STORAGE_KEYS.BOOKINGS, []);
@@ -46,6 +46,20 @@ try {
     const cleanInqs = cachedInqs.filter(i => !i.id.startsWith('inq-sample'));
     if (cleanInqs.length !== cachedInqs.length) {
       setLocal(STORAGE_KEYS.INQUIRIES, cleanInqs);
+    }
+
+    // Refresh reviews to load real Google reviews from screenshot
+    const cachedRevs = getLocal<Review[]>(STORAGE_KEYS.REVIEWS, []);
+    const hasFakeRevs = cachedRevs.some(r => r.author_name === 'Sonal Verma' || r.author_name === 'Neha Sharma' || r.author_name === 'Rajat Gupta');
+    const hasMarieClaire = cachedRevs.some(r => r.id === 'rev-bhaskar-chaudhary');
+    if (hasFakeRevs || !hasMarieClaire || cachedRevs.length === 0) {
+      setLocal(STORAGE_KEYS.REVIEWS, INITIAL_REVIEWS);
+    }
+
+    // Refresh salon info to load real address, email & phone
+    const cachedInfo = getLocal<SalonInfo>(STORAGE_KEYS.SALON_INFO, SALON_INFO as SalonInfo);
+    if (!cachedInfo.location || cachedInfo.location.includes('Plot No. 17, The Hub, Scheme No 78, Part II') || cachedInfo.email?.includes('elanbeauty') || (cachedInfo as any).secondaryPhone) {
+      setLocal(STORAGE_KEYS.SALON_INFO, SALON_INFO as SalonInfo);
     }
   }
 } catch (e) {}

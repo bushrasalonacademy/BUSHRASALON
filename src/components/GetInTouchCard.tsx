@@ -50,9 +50,9 @@ export const GetInTouchCard: React.FC<GetInTouchCardProps> = ({ onOpenShare }) =
         <div className="flex items-start gap-3.5 p-3.5 rounded-2xl bg-gray-50 border border-gray-100">
           <i className="fa-solid fa-location-dot text-[#c88132] text-base mt-0.5 flex-shrink-0"></i>
           <div className="flex-1">
-            <span className="font-bold text-gray-900 block mb-0.5">Salon Address:</span>
+            <span className="font-bold text-gray-900 block mb-0.5">Salon &amp; Academy Address:</span>
             <p className="text-gray-700 leading-relaxed font-medium">
-              Plot No. 17, <span className="bg-amber-100 text-amber-950 font-bold px-1.5 py-0.5 rounded border border-amber-300/80">THE HUB</span>, Scheme No 78, Part II, Vijay Nagar, Indore, Madhya Pradesh 452010
+              The hub, plot 17 above Lig Maggie near 7coursemart, scheme 78, Indore
             </p>
             <button
               onClick={handleCopyAddress}
@@ -68,7 +68,7 @@ export const GetInTouchCard: React.FC<GetInTouchCardProps> = ({ onOpenShare }) =
           <div className="flex items-center gap-3.5">
             <i className="fa-solid fa-phone text-[#c88132] text-base flex-shrink-0"></i>
             <div>
-              <span className="font-bold text-gray-900 block">Phone:</span>
+              <span className="font-bold text-gray-900 block">Phone &amp; Helpline:</span>
               <a href={`tel:${SALON_INFO.phone}`} className="text-gray-600 hover:text-[#2b161b] font-semibold">
                 {SALON_INFO.phoneDisplay}
               </a>
@@ -82,32 +82,34 @@ export const GetInTouchCard: React.FC<GetInTouchCardProps> = ({ onOpenShare }) =
           </a>
         </div>
 
-        {/* Academy Campus & Helpline */}
-        <div className="p-3.5 rounded-2xl bg-amber-50/70 border border-amber-200/90 space-y-2">
-          <div className="flex items-center gap-2 text-[#c88132] font-bold text-xs uppercase tracking-wider">
-            <i className="fa-solid fa-graduation-cap"></i>
-            <span>Beauty Academy (Indore Hub)</span>
+        {/* WhatsApp & Email */}
+        <div className="p-3.5 rounded-2xl bg-emerald-50/70 border border-emerald-200/80 space-y-2">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <i className="fa-brands fa-whatsapp text-emerald-600 text-lg flex-shrink-0"></i>
+              <div>
+                <span className="font-bold text-emerald-950 block text-xs">WhatsApp Quick Chat:</span>
+                <span className="text-emerald-800 text-[11px] font-medium">+91 {SALON_INFO.phone}</span>
+              </div>
+            </div>
+            <a
+              href={`https://wa.me/91${SALON_INFO.phone}?text=${encodeURIComponent("Hi Bushra's Salon & Academy, I would like to inquire about appointments and courses.")}`}
+              target="_blank"
+              rel="noreferrer"
+              className="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-3 py-1.5 rounded-full transition-colors flex items-center gap-1"
+            >
+              <span>Chat</span>
+              <i className="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
           </div>
-          <p className="text-xs text-gray-800 font-medium">
-            Plot No. 17, THE HUB, Scheme 78, Vijay Nagar, Indore
-          </p>
-          <div className="flex flex-wrap gap-2 pt-1 text-xs font-bold">
-            <a href="tel:8319504104" className="text-[#2b161b] hover:text-[#c88132] bg-white px-2.5 py-1 rounded-lg border border-amber-200">
-              📞 8319504104
-            </a>
-            <a href="tel:8319527707" className="text-[#2b161b] hover:text-[#c88132] bg-white px-2.5 py-1 rounded-lg border border-amber-200">
-              📞 8319527707
-            </a>
-            <a href="tel:07554057210" className="text-[#2b161b] hover:text-[#c88132] bg-white px-2.5 py-1 rounded-lg border border-amber-200">
-              ☎️ 0755 4057210
+
+          <div className="pt-2 border-t border-emerald-100 flex items-center gap-2 text-xs">
+            <i className="fa-solid fa-envelope text-emerald-700"></i>
+            <span className="font-medium text-gray-700">Email:</span>
+            <a href={`mailto:${SALON_INFO.email}`} className="text-[#c88132] hover:underline font-semibold">
+              {SALON_INFO.email}
             </a>
           </div>
-          <a
-            href="mailto:info@elanbeautyacademy.in"
-            className="text-[11px] text-[#c88132] hover:underline font-semibold block"
-          >
-            ✉️ info@elanbeautyacademy.in
-          </a>
         </div>
 
       </div>

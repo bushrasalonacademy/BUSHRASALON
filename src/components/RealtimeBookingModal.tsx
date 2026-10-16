@@ -318,7 +318,7 @@ export const RealtimeBookingModal: React.FC<RealtimeBookingModalProps> = ({
                     <input
                       type="text"
                       required
-                      placeholder="e.g. Sonal Verma"
+                      placeholder="e.g. Kana Bakawale"
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       className="w-full pl-10 pr-4 py-2.5 bg-white border border-gray-300 rounded-xl text-xs font-medium text-gray-900 outline-none focus:border-[#c88132]"

@@ -5,27 +5,25 @@ export const SALON_INFO = {
   shortName: "Bushra's Salon",
   tagline: "HAIR | SKIN | MAKEUP | NAIL | ACADEMY",
   subtagline: "Indore's Premier Luxury Destination for Hair Transformations, Advanced Hydra Skin Care, HD Bridal Makeovers & Custom Nail Artistry.",
-  location: "Plot No. 17, The Hub, Scheme No 78, Part II, Vijay Nagar, Indore, Madhya Pradesh 452010",
+  location: "The hub, plot 17 above Lig Maggie near 7coursemart, scheme 78, Indore",
   phone: "9630204104",
   phoneDisplay: "+91 96302 04104",
-  secondaryPhone: "+91 90395 56866",
   email: "bushra.salon.academy@gmail.com",
   instagram: "@bushrasalon_academy",
   hours: "Mon - Sun: 10:30 AM - 09:30 PM",
   yearsActive: "8+",
   happyClients: "5,000+",
   satisfactionRate: "99%",
-  aboutText: "Bushra's Salon & Academy is Vijay Nagar Indore's foremost luxury salon and certified beauty academy. Located at The Hub, Scheme 78, we feature state-of-the-art styling stations, private aesthetic skin suites, and a dedicated nail art studio, providing high-end hair transformations, dermatologically proven facials, and couture bridal makeover experiences using 100% genuine international brands like Moroccan Oil, Beauty Garage, Wella, Iluvia, Shills, L'Oréal Professionnel, and Schwarzkopf.",
+  aboutText: "Bushra's Salon & Academy is Vijay Nagar Indore's foremost luxury salon and certified beauty academy. Located at The Hub, plot 17 above Lig Maggie near 7coursemart, Scheme 78, Indore, we feature state-of-the-art styling stations, private aesthetic skin suites, and a dedicated nail art studio, providing high-end hair transformations, dermatologically proven facials, and couture bridal makeover experiences using 100% genuine international brands like Moroccan Oil, Beauty Garage, Wella, Iluvia, Shills, L'Oréal Professionnel, and Schwarzkopf.",
   vision: "To be Central India's premier luxury salon brand and most prestigious certified beauty academy.",
   mission: "Deliver world-class personalized hair, skin, bridal and nail services with unmatched hygiene and artistic precision.",
   value: "Committed to luxury quality, customer confidence, and authentic creative artistry.",
   academyCampus: {
-    address: "Plot No. 17, The Hub, Scheme No 78, Part II, Vijay Nagar, Indore, Madhya Pradesh 452010",
+    address: "The hub, plot 17 above Lig Maggie near 7coursemart, scheme 78, Indore",
     city: "Indore",
-    email: "info@elanbeautyacademy.in",
-    phones: ["8319504104", "8319527707"],
-    landline: "0755 4057210",
-    phoneDisplay: "+91 83195 04104 / +91 83195 27707 / 0755 4057210",
+    email: "bushra.salon.academy@gmail.com",
+    phones: ["9630204104"],
+    phoneDisplay: "+91 96302 04104",
   },
 };
 
@@ -308,49 +306,104 @@ export const INITIAL_SERVICES: ServiceItem[] = [
 ];
 
 export const INITIAL_REVIEWS: Review[] = [
+  // Bushra's Salon & Academy Google Reviews (4.9 Rating)
   {
-    id: 'rev-1',
-    created_at: new Date(Date.now() - 86400000 * 2).toISOString(),
-    author_name: 'Sonal Verma',
-    author_role: 'Verified Client',
-    location: 'Vijay Nagar, Indore',
-    rating: 5,
-    content: "Bushra's Salon gave me stunning glitter nail extensions and fabulous layer hair styling that everyone admired! The ambience is so luxurious and hygienic.",
-    avatar: '/photos/IMG_2638.jpg',
-    is_approved: true
-  },
-  {
-    id: 'rev-2',
-    created_at: new Date(Date.now() - 86400000 * 5).toISOString(),
-    author_name: 'Neha Sharma',
-    author_role: 'Bridal Client',
+    id: 'rev-kana-bakawale',
+    created_at: new Date(Date.now() - 86400000 * 30).toISOString(),
+    author_name: 'Kana Bakawale',
+    author_role: 'Local Guide · 3 Google Reviews',
     location: 'Scheme 78, Indore',
     rating: 5,
-    content: "Their expert bridal makeup and hydra facial team made my special day truly magical. Flawless HD finish that lasted all night without creasing!",
-    avatar: '/photos/IMG_8130.jpg',
-    is_approved: true
+    content: "I had a good experience at this salon I took skin services , facial treatment and it was very relaxing, overall I had a very good experience, the staff is very helpful, thank you so much",
+    avatar: '',
+    is_approved: true,
+    source: 'google'
   },
   {
-    id: 'rev-3',
-    created_at: new Date(Date.now() - 86400000 * 10).toISOString(),
-    author_name: 'Ananya Patel',
-    author_role: 'Hair Color Client',
-    location: 'Indore',
+    id: 'rev-rudraksh-godale',
+    created_at: new Date(Date.now() - 86400000 * 120).toISOString(),
+    author_name: 'Rudraksh Godale',
+    author_role: 'Verified Client · 2 Google Reviews',
+    location: 'Vijay Nagar, Indore',
     rating: 5,
-    content: "Got the balayage and hair spa done here. My hair feels silky smooth, radiant and so healthy. Bushra's is by far the best salon in Vijay Nagar!",
-    avatar: '/photos/IMG_1491.jpg',
-    is_approved: true
+    content: "Really amazing service by Bushra salon. Aadi is a professional and gave me the exact hair cut which I asked for. Highly recommended.thank you so much ❤️",
+    avatar: '',
+    is_approved: true,
+    source: 'google'
   },
   {
-    id: 'rev-4',
-    created_at: new Date(Date.now() - 86400000 * 12).toISOString(),
-    author_name: 'Pooja Tiwari',
-    author_role: 'Nail Art Enthusiast',
+    id: 'rev-rishabh-yadav',
+    created_at: new Date(Date.now() - 86400000 * 90).toISOString(),
+    author_name: 'Rishabh Yadav',
+    author_role: 'Verified Client · 1 Google Review',
     location: 'Indore',
     rating: 5,
-    content: "The 3D nail art here is top tier! They have genuine international gel products and master technicians. 10/10 recommended.",
-    avatar: '/photos/IMG_2280.jpg',
-    is_approved: true
+    content: "Excellent service, professional staff and great attention to detail.Really happy with my haircut. A truly premium experience.highly recommended!",
+    avatar: '',
+    is_approved: true,
+    source: 'google'
+  },
+  {
+    id: 'rev-anmol-sharma',
+    created_at: new Date(Date.now() - 86400000 * 90).toISOString(),
+    author_name: 'Anmol Sharma',
+    author_role: 'Verified Client · Google Review',
+    location: 'Indore',
+    rating: 5,
+    content: "Excellent experience at Bushra's Salon! Anuj gave me a clean, stylish haircut exactly as I wanted. Professional service, great attention to detail, and a friendly atmosphere. Highly recommended!",
+    avatar: '',
+    is_approved: true,
+    source: 'google'
+  },
+
+  // Marie Claire Paris Salon Verified Google Reviews (4.9 Rating · 271 Reviews)
+  {
+    id: 'rev-bhaskar-chaudhary',
+    created_at: new Date(Date.now() - 86400000 * 180).toISOString(),
+    author_name: 'Bhaskar Chaudhary',
+    author_role: 'Local Guide · 27 Google Reviews',
+    location: 'Scheme 78, Indore',
+    rating: 5,
+    content: "Absolutely loved my experience at Marie Claire! Anuj did an amazing job with my haircut, styling, and hair spa. Mahima was equally wonderful and very helpful. The entire team was attentive and hospitable throughout. Great service and great people—definitely coming back!",
+    avatar: '',
+    is_approved: true,
+    source: 'marie_claire'
+  },
+  {
+    id: 'rev-chehak-jain',
+    created_at: new Date(Date.now() - 86400000 * 210).toISOString(),
+    author_name: 'Chehak Jain',
+    author_role: 'Verified Client · Google Review',
+    location: 'Indore',
+    rating: 5,
+    content: "The experience was amazinggg! I recently went there for haircolour. Anuj sir, the manager and head stylist, cleared all my doubts and suggested the best hair colour according to my skin tone. The hair colour turned out so good and smooth. Highly recommended.",
+    avatar: '',
+    is_approved: true,
+    source: 'marie_claire'
+  },
+  {
+    id: 'rev-samriddhi-singh',
+    created_at: new Date(Date.now() - 86400000 * 240).toISOString(),
+    author_name: 'Samriddhi Singh',
+    author_role: 'Verified Client · Google Review',
+    location: 'Vijay Nagar, Indore',
+    rating: 5,
+    content: "Amazing experience. Got hair spa and pedicure done here and the staff was very well trained and professional.",
+    avatar: '',
+    is_approved: true,
+    source: 'marie_claire'
+  },
+  {
+    id: 'rev-prerna-rathore',
+    created_at: new Date(Date.now() - 86400000 * 270).toISOString(),
+    author_name: 'Prerna Rathore',
+    author_role: 'Verified Client · Google Review',
+    location: 'Indore',
+    rating: 5,
+    content: "So so overwhelmed by their services. I went before my wedding for hair colouring and it turned out beyond my expectations. Special thanks to Anuj sir for giving such personal attention!",
+    avatar: '',
+    is_approved: true,
+    source: 'marie_claire'
   }
 ];
 
@@ -361,7 +414,7 @@ export const FAQS = [
   },
   {
     question: "Where is Bushra's Salon located in Indore?",
-    answer: "We are located at Plot No. 17, The Hub, Scheme No 78, Part II, Vijay Nagar, Indore, MP 452010. You can call +91 96302 04104 or +91 90395 56866 for instant directions."
+    answer: "We are located at The hub, plot 17 above Lig Maggie near 7coursemart, scheme 78, Indore. You can call +91 96302 04104 for instant directions."
   },
   {
     question: "Do I need an appointment in advance?",
@@ -377,7 +430,7 @@ export const FAQS = [
   },
   {
     question: "Where is the Academy campus located and how can I apply?",
-    answer: "Our specialized Academy campus is located at Plot No. 17, The Hub, Scheme No 78, Part II, Vijay Nagar, Indore (Helplines: 8319504104, 8319527707, 0755 4057210 | Email: info@elanbeautyacademy.in). You can submit an online brochure request or WhatsApp our admission counselors directly."
+    answer: "Our specialized Academy is located at The hub, plot 17 above Lig Maggie near 7coursemart, scheme 78, Indore (Helpline / WhatsApp: +91 96302 04104 | Email: bushra.salon.academy@gmail.com). You can submit an online brochure request or WhatsApp our admission counselors directly."
   },
   {
     question: "What payment methods are accepted?",
