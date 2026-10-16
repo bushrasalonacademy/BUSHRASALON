@@ -206,6 +206,7 @@ export default function App() {
                 <span>/</span>
                 <span className="text-[#c88132] font-bold capitalize">
                   {activeTab === 'services' && 'Services & Pricing Rate Card'}
+                  {activeTab === 'academy' && 'Academy & Professional Courses'}
                   {activeTab === 'offers' && 'Offers & VIP Packages'}
                   {activeTab === 'reviews' && 'Client Reviews & Ratings'}
                   {activeTab === 'gallery' && 'Photos & Salon Ambience'}
@@ -256,6 +257,20 @@ export default function App() {
                     services={services}
                     onBookService={handleOpenBooking}
                   />
+                  <AmenitiesCard />
+                </div>
+                <div className="lg:col-span-4 space-y-8 sm:space-y-10">
+                  <EnquireNowForm />
+                  <GetInTouchCard onOpenShare={() => setShareModalOpen(true)} />
+                </div>
+              </>
+            )}
+
+            {/* SCREEN: ACADEMY COURSES */}
+            {activeTab === 'academy' && (
+              <>
+                <div className="lg:col-span-8 space-y-8 sm:space-y-10">
+                  <AcademySection />
                   <AmenitiesCard />
                 </div>
                 <div className="lg:col-span-4 space-y-8 sm:space-y-10">

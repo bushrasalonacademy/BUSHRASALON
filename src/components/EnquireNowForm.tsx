@@ -52,8 +52,8 @@ export const EnquireNowForm: React.FC = () => {
         name: formData.name,
         phone: formData.mobile,
         email: formData.email,
+        service_interest: 'Quick Consultation',
         message: formData.message || 'General Enquiry',
-        preferred_time: 'As soon as possible',
       });
 
       setSubmitted(true);

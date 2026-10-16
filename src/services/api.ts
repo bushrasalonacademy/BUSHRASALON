@@ -456,6 +456,10 @@ export const api = {
     return newRev;
   },
 
+  async createReview(review: Omit<Review, 'id' | 'created_at' | 'is_approved'>): Promise<Review> {
+    return this.addReview(review);
+  },
+
   async toggleReviewApproval(id: string, is_approved: boolean): Promise<void> {
     if (isSupabaseConfigured && supabase) {
       try {

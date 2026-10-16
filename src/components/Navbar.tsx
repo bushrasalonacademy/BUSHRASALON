@@ -63,6 +63,12 @@ export const Navbar: React.FC<NavbarProps> = ({
               Services
             </button>
             <button 
+              onClick={() => handleNavigate('academy')} 
+              className={`nav-link-item ${activeTab === 'academy' ? 'bg-[#fdf8f0] text-[#2b161b] font-bold' : ''}`}
+            >
+              Academy
+            </button>
+            <button 
               onClick={() => handleNavigate('gallery')} 
               className={`nav-link-item ${activeTab === 'gallery' ? 'bg-[#fdf8f0] text-[#2b161b] font-bold' : ''}`}
             >
@@ -183,6 +189,12 @@ export const Navbar: React.FC<NavbarProps> = ({
             className={`block w-full text-left px-3 py-2 text-sm font-medium rounded-lg ${activeTab === 'services' ? 'bg-[#fdf8f0] text-[#2b161b] font-bold' : 'text-gray-700 hover:bg-gray-50'}`}
           >
             Services &amp; Pricing
+          </button>
+          <button
+            onClick={() => handleNavigate('academy')}
+            className={`block w-full text-left px-3 py-2 text-sm font-medium rounded-lg ${activeTab === 'academy' ? 'bg-[#fdf8f0] text-[#2b161b] font-bold' : 'text-gray-700 hover:bg-gray-50'}`}
+          >
+            Academy &amp; Courses
           </button>
           <button
             onClick={() => handleNavigate('offers')}

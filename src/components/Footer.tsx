@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, Phone, MessageCircle, Instagram, MapPin, Heart, ShieldCheck } from 'lucide-react';
+import { Sparkles, Phone, MessageCircle, MapPin, ShieldCheck } from 'lucide-react';
 import { SALON_INFO } from '../data/initialData';
 
 interface FooterProps {
@@ -74,7 +74,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onOpenAdmin }) =>
             <div className="footer-contact-details">
               <p className="f-item">
                 <MapPin size={16} className="gold-icon" />
-                <span>Vijay Nagar, Indore, MP</span>
+                <span>The Hub, Plot No. 17, Scheme 78, Vijay Nagar, Indore</span>
               </p>
               <p className="f-item">
                 <Phone size={16} className="gold-icon" />
@@ -82,7 +82,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onOpenAdmin }) =>
               </p>
               <p className="f-item">
                 <Sparkles size={16} className="gold-icon" />
-                <span>Mon - Sun: 10:00 AM - 8:30 PM</span>
+                <span>{SALON_INFO.hours}</span>
               </p>
             </div>
             <button onClick={onOpenBooking} className="footer-book-cta">

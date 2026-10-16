@@ -45,7 +45,7 @@ export const AboutCard: React.FC = () => {
           </div>
           <h3 className="text-sm font-bold text-gray-900">100% Genuine Brands</h3>
           <p className="text-xs text-gray-600 leading-relaxed">
-            We exclusively use original products from L'Oréal Professionnel, Olaplex, Schwarzkopf &amp; Kryolan.
+            We exclusively use original products from Moroccan Oil, Beauty Garage, Wella, Iluvia, Shills &amp; L'Oréal.
           </p>
         </div>
 
@@ -63,12 +63,14 @@ export const AboutCard: React.FC = () => {
       {/* Brand Partner Logos Banner */}
       <div className="pt-6 border-t border-gray-200/60 flex flex-wrap items-center justify-between gap-4 text-xs font-bold text-gray-400 uppercase tracking-wider">
         <span>Official Product Partners:</span>
-        <div className="flex flex-wrap items-center gap-6 text-gray-600 font-semibold text-xs sm:text-sm">
+        <div className="flex flex-wrap items-center gap-4 sm:gap-6 text-gray-700 font-semibold text-xs sm:text-sm">
+          <span className="hover:text-black transition-colors">Moroccan Oil</span>
+          <span className="hover:text-black transition-colors">Beauty Garage</span>
+          <span className="hover:text-black transition-colors">Wella</span>
+          <span className="hover:text-black transition-colors">Iluvia</span>
+          <span className="hover:text-black transition-colors">Shills</span>
           <span className="hover:text-black transition-colors">L'Oréal Professionnel</span>
-          <span className="hover:text-black transition-colors">Olaplex</span>
           <span className="hover:text-black transition-colors">Schwarzkopf</span>
-          <span className="hover:text-black transition-colors">Kryolan</span>
-          <span className="hover:text-black transition-colors">O.P.I Nails</span>
         </div>
       </div>
 

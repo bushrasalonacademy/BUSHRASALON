@@ -74,7 +74,7 @@ export const GalleryModal: React.FC<GalleryModalProps> = ({
               Bushra's Salon &amp; Academy Gallery
             </h3>
             <p className="text-xs text-gray-500 mt-0.5">
-              Plot No 02, Scheme No 78, Vijay Nagar, Indore
+              Plot No. 17, The Hub, Scheme No 78, Vijay Nagar, Indore
             </p>
           </div>
           <button

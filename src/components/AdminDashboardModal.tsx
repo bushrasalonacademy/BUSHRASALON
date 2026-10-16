@@ -280,7 +280,7 @@ export const AdminDashboardModal: React.FC<AdminDashboardModalProps> = ({
   };
 
   const getWhatsAppBookingLink = (b: Booking) => {
-    const text = `Hello ${b.customer_name}! Your appointment for *${b.service_title}* at *Bushra's Salon & Academy* on *${b.booking_date}* at *${b.booking_time}* is *CONFIRMED*. Location: Plot No 02, Scheme No 78, Vijay Nagar, Indore. We look forward to welcoming you!`;
+    const text = `Hello ${b.customer_name}! Your appointment for *${b.service_title}* at *Bushra's Salon & Academy* on *${b.booking_date}* at *${b.booking_time}* is *CONFIRMED*. Location: Plot No. 17, The Hub, Scheme No 78, Vijay Nagar, Indore. We look forward to welcoming you!`;
     const cleanPhone = b.customer_phone.replace(/\D/g, '');
     return `https://wa.me/91${cleanPhone.length === 10 ? cleanPhone : cleanPhone.slice(-10)}?text=${encodeURIComponent(text)}`;
   };

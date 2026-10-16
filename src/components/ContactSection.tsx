@@ -80,7 +80,7 @@ export const ContactSection: React.FC = () => {
                 <div>
                   <h4 className="contact-item-title">Salon Address</h4>
                   <p className="contact-item-value">{SALON_INFO.location}</p>
-                  <p className="contact-item-note">Near Main Square, Vijay Nagar, Indore</p>
+                  <p className="contact-item-note">The Hub, Scheme No 78, Vijay Nagar, Indore</p>
                 </div>
               </div>
 
@@ -108,6 +108,23 @@ export const ContactSection: React.FC = () => {
                     className="whatsapp-inline-btn"
                   >
                     <span>Chat Directly on WhatsApp &rarr;</span>
+                  </a>
+                </div>
+              </div>
+
+              {/* Academy Campus & Helpline */}
+              <div className="contact-item" style={{ borderTop: '1px solid #f1f5f9', paddingTop: '16px' }}>
+                <div className="contact-icon-bubble" style={{ background: '#fdf6ed' }}>
+                  <Sparkles size={20} className="gold-icon" />
+                </div>
+                <div>
+                  <h4 className="contact-item-title">Academy Admissions (Indore Hub)</h4>
+                  <p className="contact-item-value">The Hub, Scheme No 78, Vijay Nagar, Indore</p>
+                  <p className="contact-item-note">
+                    Helplines: <a href="tel:8319504104" className="highlight-link">8319504104</a> / <a href="tel:8319527707" className="highlight-link">8319527707</a> / 0755 4057210
+                  </p>
+                  <a href="mailto:info@elanbeautyacademy.in" className="contact-item-note highlight-link" style={{ display: 'block', marginTop: '2px' }}>
+                    info@elanbeautyacademy.in
                   </a>
                 </div>
               </div>
@@ -152,15 +169,24 @@ export const ContactSection: React.FC = () => {
                     </div>
 
                     <div className="form-group">
-                      <label>Service Category</label>
+                      <label>Service / Course Interest</label>
                       <select value={service} onChange={(e) => setService(e.target.value)}>
-                        <option>Hair Care & Styling</option>
-                        <option>Hair Treatments & Spa</option>
-                        <option>Bridal & Party Makeup</option>
-                        <option>Skin Care & Facials</option>
-                        <option>Custom Nail Art & Extensions</option>
-                        <option>Complete Makeover</option>
-                        <option>Academy Course Inquiry</option>
+                        <optgroup label="Salon Services">
+                          <option>Hair Care &amp; Styling</option>
+                          <option>Hair Treatments &amp; Spa</option>
+                          <option>Bridal &amp; Party Makeup</option>
+                          <option>Skin Care &amp; Facials</option>
+                          <option>Custom Nail Art &amp; Extensions</option>
+                          <option>Complete Makeover</option>
+                        </optgroup>
+                        <optgroup label="Academy Courses">
+                          <option>Head to Toe Special Course (12 Months)</option>
+                          <option>Beauty Therapy Courses (3-7 Months)</option>
+                          <option>Hair Designing Courses (2-5 Months)</option>
+                          <option>Make-Up Courses (2-5 Months)</option>
+                          <option>Advance Nail Course (3 Months)</option>
+                          <option>Salon Management Course (2 Months)</option>
+                        </optgroup>
                       </select>
                     </div>
                   </div>

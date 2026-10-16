@@ -12,7 +12,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose }) => {
 
   const currentUrl = window.location.href;
   const address =
-    'Plot No 02, Near Pizza Hut, Part II, Scheme 78, Vijay Nagar, Indore, Madhya Pradesh, 452010';
+    'Plot No. 17, The Hub, Scheme No 78, Part II, Vijay Nagar, Indore, Madhya Pradesh, 452010';
 
   const handleCopy = () => {
     navigator.clipboard.writeText(currentUrl);
@@ -21,7 +21,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose }) => {
   };
 
   const handleWhatsApp = () => {
-    const text = `Check out NSalon - Vijay Nagar, Indore:\n📍 ${address}\n🔗 ${currentUrl}`;
+    const text = `Check out Bushra's Salon & Academy - The Hub, Vijay Nagar, Indore:\n📍 ${address}\n🔗 ${currentUrl}`;
     window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
   };
 
@@ -39,7 +39,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose }) => {
           Share Salon Profile
         </h3>
         <p className="text-xs text-gray-500 mb-4">
-          Share NSalon - Vijay Nagar, Indore with friends and family
+          Share Bushra's Salon &amp; Academy - The Hub, Vijay Nagar, Indore with friends and family
         </p>
 
         <div className="space-y-3">

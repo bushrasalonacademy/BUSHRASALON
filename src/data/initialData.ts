@@ -5,20 +5,28 @@ export const SALON_INFO = {
   shortName: "Bushra's Salon",
   tagline: "HAIR | SKIN | MAKEUP | NAIL | ACADEMY",
   subtagline: "Indore's Premier Luxury Destination for Hair Transformations, Advanced Hydra Skin Care, HD Bridal Makeovers & Custom Nail Artistry.",
-  location: "Plot No 02, Near Vijay Nagar Square, Part II, Scheme No 78, Vijay Nagar, Indore, Madhya Pradesh 452010",
+  location: "Plot No. 17, The Hub, Scheme No 78, Part II, Vijay Nagar, Indore, Madhya Pradesh 452010",
   phone: "9630204104",
   phoneDisplay: "+91 96302 04104",
   secondaryPhone: "+91 90395 56866",
-  email: "info@bushrasalon.com",
+  email: "bushra.salon.academy@gmail.com",
   instagram: "@bushrasalon_academy",
-  hours: "Mon - Sun: 10:00 AM - 08:30 PM",
+  hours: "Mon - Sun: 10:30 AM - 09:30 PM",
   yearsActive: "8+",
   happyClients: "5,000+",
   satisfactionRate: "99%",
-  aboutText: "Bushra's Salon & Academy is Vijay Nagar Indore's foremost luxury salon and certified beauty academy. Featuring state-of-the-art styling stations, private aesthetic skin suites, and a dedicated nail art studio, we provide high-end hair transformations, dermatologically proven facials, and couture bridal makeover experiences using 100% genuine international brands like L'Oréal Professionnel, Olaplex, Schwarzkopf, and Iluvia.",
+  aboutText: "Bushra's Salon & Academy is Vijay Nagar Indore's foremost luxury salon and certified beauty academy. Located at The Hub, Scheme 78, we feature state-of-the-art styling stations, private aesthetic skin suites, and a dedicated nail art studio, providing high-end hair transformations, dermatologically proven facials, and couture bridal makeover experiences using 100% genuine international brands like Moroccan Oil, Beauty Garage, Wella, Iluvia, Shills, L'Oréal Professionnel, and Schwarzkopf.",
   vision: "To be Central India's premier luxury salon brand and most prestigious certified beauty academy.",
   mission: "Deliver world-class personalized hair, skin, bridal and nail services with unmatched hygiene and artistic precision.",
   value: "Committed to luxury quality, customer confidence, and authentic creative artistry.",
+  academyCampus: {
+    address: "Plot No. 17, The Hub, Scheme No 78, Part II, Vijay Nagar, Indore, Madhya Pradesh 452010",
+    city: "Indore",
+    email: "info@elanbeautyacademy.in",
+    phones: ["8319504104", "8319527707"],
+    landline: "0755 4057210",
+    phoneDisplay: "+91 83195 04104 / +91 83195 27707 / 0755 4057210",
+  },
 };
 
 export const NAIL_BADGES = [
@@ -353,7 +361,7 @@ export const FAQS = [
   },
   {
     question: "Where is Bushra's Salon located in Indore?",
-    answer: "We are located at Plot No 02, Near Vijay Nagar Square, Part II, Scheme No 78, Vijay Nagar, Indore, MP 452010. You can call +91 96302 04104 or +91 90395 56866 for instant directions."
+    answer: "We are located at Plot No. 17, The Hub, Scheme No 78, Part II, Vijay Nagar, Indore, MP 452010. You can call +91 96302 04104 or +91 90395 56866 for instant directions."
   },
   {
     question: "Do I need an appointment in advance?",
@@ -361,7 +369,15 @@ export const FAQS = [
   },
   {
     question: "What brands and products do you use?",
-    answer: "We use only 100% genuine, dermatologist-tested, top international brands like L'Oréal Professionnel, Olaplex, Schwarzkopf, Iluvia, Kryolan, Huda Beauty, and O.P.I."
+    answer: "We use only 100% genuine, dermatologist-tested, top international brands like Moroccan Oil, Beauty Garage, Wella, Iluvia, Shills, L'Oréal Professionnel, Schwarzkopf, and Huda Beauty."
+  },
+  {
+    question: "What academy courses are available and what is the class schedule?",
+    answer: "We offer professional certified courses in Beauty Therapy (Foundation 3m, Certificate 5m, Advance 7m, Professional 2m), Hair (Foundation 3m, Advance 5m, Professional 2m), Make-Up (Foundation 2m, Advance 5m), Advance Nail Course (3m), Salon Management (2m), and our flagship 12-Month Special Head to Toe Program covering Skin Advance, Hair Advance, Nail Art, Make-Up, Personality Development, and Self Grooming. Classes run 5 days a week with job assistance provided in all modules."
+  },
+  {
+    question: "Where is the Academy campus located and how can I apply?",
+    answer: "Our specialized Academy campus is located at Plot No. 17, The Hub, Scheme No 78, Part II, Vijay Nagar, Indore (Helplines: 8319504104, 8319527707, 0755 4057210 | Email: info@elanbeautyacademy.in). You can submit an online brochure request or WhatsApp our admission counselors directly."
   },
   {
     question: "What payment methods are accepted?",
@@ -370,31 +386,241 @@ export const FAQS = [
 ];
 
 export const ACADEMY_COURSES: AcademyCourse[] = [
+  // --- SPECIAL SIGNATURE COURSE ---
   {
-    id: 'course-1',
-    title: 'Diploma in Advanced Hair Styling & Color Mastery',
+    id: 'course-head-to-toe',
+    title: 'Our Special Head to Toe Course',
+    category: 'head_to_toe',
+    categoryLabel: 'Special Signature Course',
+    duration: '12 Months',
+    classes: '5 days in a week',
+    jobAssistance: 'With Job Assistance',
+    featured: true,
+    description: 'Our all-inclusive flagship master program covering Skin Advance, Hair Advance, Nail Art, Make-Up, Personality Development & Self Grooming with 100% live client training and job assistance.',
+    curriculum: [
+      'Skin Advance',
+      'Hair Advance',
+      'Nail Art',
+      'Make-Up',
+      'Personality Development',
+      'Self Grooming'
+    ],
+    certification: 'Grand Master Diploma in Head to Toe Beauty Sciences',
+    level: 'Complete Master Program'
+  },
+
+  // --- BEAUTY THERAPY ---
+  {
+    id: 'course-bt-foundation',
+    title: 'Foundation Course (Basic)',
+    category: 'beauty_therapy',
+    categoryLabel: 'Beauty Therapy',
     duration: '3 Months',
-    description: 'Master international haircut techniques, balayage, keratin smoothing, and hair chemistry on live clients.',
-    curriculum: ['Precision Layer Cuts', 'Balayage & Ombre Color', 'Keratin & Nanoplastia', 'Client Consultation & Hygiene'],
-    certification: 'ISO Certified Academy Diploma',
-    level: 'Beginner to Advanced'
+    classes: '5 days in a week',
+    jobAssistance: 'Job Assistance given in all modules',
+    description: 'Comprehensive foundational training in skin anatomy, hygiene protocols, classic clean-ups, facials, threading, and waxing techniques.',
+    curriculum: ['Skin Analysis & Cleansing', 'Classic Facials & D-Tan', 'Threading & Waxing Techniques', 'Hygiene & Sanitization'],
+    certification: 'Foundation Certificate in Beauty Therapy',
+    level: 'Basic / Beginner'
   },
   {
-    id: 'course-2',
-    title: 'Professional HD & Airbrush Bridal Makeover',
+    id: 'course-bt-certificate',
+    title: 'Certificate Course',
+    category: 'beauty_therapy',
+    categoryLabel: 'Beauty Therapy',
+    duration: '5 Months',
+    classes: '5 days in a week',
+    jobAssistance: 'Job Assistance given in all modules',
+    description: 'In-depth professional aesthetic skin therapies, specialized treatment facials, electrotherapy machine operations, and body spa rituals.',
+    curriculum: ['Specialized Skin Treatments', 'Electrotherapy Facial Machines', 'Bleaching & Advanced D-Tan', 'Body Polishing & Spa Rituals'],
+    certification: 'Professional Certificate in Beauty Therapy',
+    level: 'Intermediate'
+  },
+  {
+    id: 'course-bt-advance',
+    title: 'Advance Beauty Course',
+    category: 'beauty_therapy',
+    categoryLabel: 'Beauty Therapy',
+    duration: '7 Months',
+    classes: '5 days in a week',
+    jobAssistance: 'Job Assistance given in all modules',
+    description: 'Master level aesthetic cosmetology covering hydra-facials, oxygen glow therapy, clinical acne & pigmentation solutions, and chemical exfoliation protocols.',
+    curriculum: ['Hydra Dermabrasion & Vacuum Infusion', 'Acne & Pigmentation Therapies', 'Chemical Peels & LED Light Therapy', 'Client Diagnosis & Treatment Plans'],
+    certification: 'Master Diploma in Advanced Beauty Therapy',
+    level: 'Advanced Master'
+  },
+  {
+    id: 'course-bt-pro',
+    title: "Advance Course For Professional's",
+    category: 'beauty_therapy',
+    categoryLabel: 'Beauty Therapy',
     duration: '2 Months',
-    description: 'Hands-on bridal makeover mastery, undertone color theory, eye contouring, and luxury dupatta draping.',
-    curriculum: ['HD Makeup Techniques', 'Airbrush Equipment', 'Bridal Hairstyling', 'Portfolio Photoshoot'],
-    certification: 'Certified Master Makeup Artist',
-    level: 'Professional'
+    classes: '5 days in a week',
+    jobAssistance: 'Job Assistance given in all modules',
+    description: 'Fast-track upgrade program designed for practicing beauticians and salon staff to master cutting-edge aesthetic devices, Korean glass skin rituals, and modern client consulting.',
+    curriculum: ['Advanced Machine Mastery', 'Korean Glass Skin Protocols', 'Customized Serum Blends', 'Express Salon Workflows'],
+    certification: 'Advanced Professional Beauty Specialist',
+    level: "Professional's Fast-Track"
+  },
+
+  // --- HAIR ---
+  {
+    id: 'course-hair-foundation',
+    title: 'Foundation Course (Basic)',
+    category: 'hair',
+    categoryLabel: 'Hair',
+    duration: '3 Months',
+    classes: '5 days in a week',
+    jobAssistance: 'Job Assistance given in all modules',
+    description: 'Core hairdressing principles including hair structure, professional washing & conditioning, classic haircuts, blowout styling, and basic global hair color.',
+    curriculum: ['Hair Structure & Trichology', 'Classic Haircuts & Sectioning', 'Blow-dry & Thermal Iron Styling', 'Basic Global Hair Color'],
+    certification: 'Certificate in Hair Styling Fundamentals',
+    level: 'Basic / Beginner'
   },
   {
-    id: 'course-3',
-    title: 'Nail Artistry & 3D Gel Extension Mastery',
-    duration: '1 Month',
-    description: 'Learn gel extensions, acrylic sculpting, chrome foil, 3D floral sculpting, and luxury nail care science.',
-    curriculum: ['Gel & Acrylic Extensions', '3D Sculpting & Foils', 'Korean Glass Nail Art', 'Salon Sanitation & Aftercare'],
-    certification: 'Certified Nail Technician',
-    level: 'All Levels'
+    id: 'course-hair-advance',
+    title: 'Advance Course',
+    category: 'hair',
+    categoryLabel: 'Hair',
+    duration: '5 Months',
+    classes: '5 days in a week',
+    jobAssistance: 'Job Assistance given in all modules',
+    description: 'High-level hair architecture covering multi-step volume cuts, dimensional balayage, ombre shading, keratin smoothing, nanoplastia, and botox hair restoration.',
+    curriculum: ['Multi-Step & Feather Layer Cuts', 'Balayage & Ombre Color Chemistry', 'Keratin & Nanoplastia Straightening', 'Amino Botox & Bond Building'],
+    certification: 'Advanced Diploma in Hair Artistry',
+    level: 'Advanced'
+  },
+  {
+    id: 'course-hair-pro',
+    title: "Hair Course For Professional's",
+    category: 'hair',
+    categoryLabel: 'Hair',
+    duration: '2 Months',
+    classes: '5 days in a week',
+    jobAssistance: 'Job Assistance given in all modules',
+    description: 'Masterclass for experienced hairdressers to master international cutting trends, creative color corrections, high-fashion styling, and salon speed techniques.',
+    curriculum: ['Precision Texture Cutting', 'Advanced Color Correction & Toning', 'Editorial & Runway Blowouts', 'Commercial Salon Efficiency'],
+    certification: 'Master Hair Specialist Certification',
+    level: "Professional's Fast-Track"
+  },
+
+  // --- MAKE-UP ---
+  {
+    id: 'course-makeup-foundation',
+    title: 'Foundation Course (Basic)',
+    category: 'makeup',
+    categoryLabel: 'Make-Up',
+    duration: '2 Months',
+    classes: '5 days in a week',
+    jobAssistance: 'Job Assistance given in all modules',
+    description: 'Essential makeup fundamentals including skin undertones, face sculpting, foundation matching, day & evening glam, and basic eye styling.',
+    curriculum: ['Skin Undertones & Color Wheels', 'Base Application & Blending', 'Day & Evening Party Makeup', 'Eyelash & Brow Definition'],
+    certification: 'Certificate in Basic Makeup Artistry',
+    level: 'Basic / Beginner'
+  },
+  {
+    id: 'course-makeup-advance',
+    title: 'Advance Make -Up Course',
+    category: 'makeup',
+    categoryLabel: 'Make-Up',
+    duration: '5 Months',
+    classes: '5 days in a week',
+    jobAssistance: 'Job Assistance given in all modules',
+    description: 'High-definition and airbrush bridal makeover mastery, cut-crease eye artistry, editorial fashion looks, bridal dupatta setting, and live client portfolio shoots.',
+    curriculum: ['HD & Airbrush Bridal Techniques', 'Cut-Crease & Smokey Eye Sculpting', 'Bridal Hairstyling & Dupatta Draping', 'Live Model Portfolio Photoshoot'],
+    certification: 'Master Diploma in Bridal & HD Make-Up',
+    level: 'Advanced / Bridal Master'
+  },
+
+  // --- NAILS ---
+  {
+    id: 'course-nails-advance',
+    title: 'Advance Nail Course',
+    category: 'nails',
+    categoryLabel: 'Nails',
+    duration: '3 Months',
+    classes: '5 days in a week',
+    jobAssistance: 'With Job Assistance',
+    description: 'Complete hands-on professional nail technician course: gel & acrylic extensions, tip application, 3D floral sculpting, chrome mirror, foil art, glitter ombre, and hygienic refills.',
+    curriculum: ['Gel & Acrylic Nail Extensions', '3D Sculpted Acrylic Art & Gems', 'Chrome Mirror & Glitter Ombre', 'Refills, Safe Removal & Sanitation'],
+    certification: 'Certified Master Nail Technician',
+    level: 'Professional Mastery'
+  },
+
+  // --- SALON MANAGEMENT ---
+  {
+    id: 'course-salon-management',
+    title: 'Salon Management',
+    category: 'salon_management',
+    categoryLabel: 'Salon Management',
+    duration: '2 Months',
+    classes: '5 days in a week',
+    jobAssistance: 'With Job Assistance',
+    description: 'Business and leadership program tailored for aspiring salon owners and floor managers covering client retention, inventory management, staff SOPs, billing, and social media growth.',
+    curriculum: ['Salon Operations & Client Experience', 'Inventory Control & Vendor Management', 'Staff Training & Reception Protocols', 'POS Billing, Taxation & Digital Marketing'],
+    certification: 'Certified Salon Business Manager',
+    level: 'Executive Business Course'
   }
 ];
+
+export interface BeautyJourneyStep {
+  step: string;
+  title: string;
+  description: string;
+}
+
+export const BEAUTY_JOURNEY_STEPS: BeautyJourneyStep[] = [
+  {
+    step: '01',
+    title: 'Select Your Service',
+    description: 'Browse our curated menu from hair transformations and hydra skin care to bespoke nail artistry.'
+  },
+  {
+    step: '02',
+    title: 'Schedule Appointment',
+    description: 'Choose your convenient date, time slot, and senior master stylist online or via WhatsApp.'
+  },
+  {
+    step: '03',
+    title: 'Consultation & Pampering',
+    description: 'Receive an in-depth hair & skin analysis followed by customized luxury care with genuine global brands.'
+  },
+  {
+    step: '04',
+    title: 'Flawless Transformation',
+    description: 'Walk out radiant with renewed confidence and personalized maintenance tips from our experts.'
+  }
+];
+
+export interface WhyChooseItem {
+  title: string;
+  description: string;
+}
+
+export const WHY_CHOOSE_ITEMS: WhyChooseItem[] = [
+  {
+    title: 'Client-First Philosophy',
+    description: 'Personalized attention with detailed consultations tailored to your individual style and needs.'
+  },
+  {
+    title: 'Master Certified Stylists',
+    description: 'Over 8+ years of dedicated artistry with continuous training in global beauty trends.'
+  },
+  {
+    title: '100% Genuine Products',
+    description: 'Exclusive use of authentic international brands like L’Oréal, Iluvia, Schwarzkopf & O.P.I.'
+  },
+  {
+    title: 'Hospital-Grade Hygiene',
+    description: 'Autoclaved tools, single-use disposables, and pristine sanitized stations every time.'
+  },
+  {
+    title: 'Govt. Recognized Academy',
+    description: 'ISO-certified diploma courses empowering aspiring artists with hands-on live client practice.'
+  },
+  {
+    title: 'Indore’s Trendsetter',
+    description: 'Forefront of viral Korean glass skin, balayage contouring, and 3D sculpted nail art.'
+  }
+];
+

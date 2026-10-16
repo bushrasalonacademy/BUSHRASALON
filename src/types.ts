@@ -66,11 +66,16 @@ export interface Inquiry {
 export interface AcademyCourse {
   id: string;
   title: string;
+  category: 'beauty_therapy' | 'hair' | 'makeup' | 'nails' | 'head_to_toe' | 'salon_management';
+  categoryLabel?: string;
   duration: string;
+  classes?: string;
+  jobAssistance?: string;
   description: string;
   curriculum: string[];
-  certification: string;
+  certification?: string;
   level: string;
+  featured?: boolean;
 }
 
 export interface SalonInfo {
@@ -93,4 +98,11 @@ export interface SalonInfo {
   mission: string;
   value: string;
   announcement?: string;
+  academyCampus?: {
+    address: string;
+    email: string;
+    phones: string[];
+    phoneDisplay: string;
+    landline?: string;
+  };
 }

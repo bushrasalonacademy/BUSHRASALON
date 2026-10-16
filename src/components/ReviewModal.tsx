@@ -26,13 +26,12 @@ export const ReviewModal: React.FC<ReviewModalProps> = ({
 
     setLoading(true);
     try {
-      await api.createReview({
+      await api.addReview({
         author_name: name,
         author_role: 'Client',
         location: 'Indore',
         rating,
         content,
-        is_approved: true,
       });
 
       setSuccess(true);

@@ -70,6 +70,11 @@ export const FooterSection: React.FC<FooterSectionProps> = ({
                 </button>
               </li>
               <li>
+                <button onClick={() => handleNavigate('academy')} className="text-gray-300 hover:text-[#c88132] transition-colors cursor-pointer">
+                  Academy &amp; Professional Courses
+                </button>
+              </li>
+              <li>
                 <button onClick={() => handleNavigate('offers')} className="text-gray-300 hover:text-[#c88132] transition-colors cursor-pointer">
                   Offers &amp; VIP Packages
                 </button>
@@ -115,50 +120,45 @@ export const FooterSection: React.FC<FooterSectionProps> = ({
                 </p>
                 <p className="text-[#c88132] font-bold pl-5 mt-0.5">{SALON_INFO.hours}</p>
               </div>
-
-              <div>
-                <h5 className="font-semibold text-gray-200">Academy Sessions</h5>
-                <p className="text-gray-400 mt-1 flex items-center gap-1.5">
-                  <i className="fa-regular fa-clock text-[#c88132]"></i> Monday - Saturday
-                </p>
-                <p className="text-gray-300 pl-5 mt-0.5">11:00 AM – 05:00 PM</p>
-              </div>
             </div>
           </div>
 
           {/* Column 4: Contact Info */}
           <div>
             <h4 className="text-sm font-bold text-white mb-4 border-b border-gray-700/80 pb-2 uppercase tracking-wider">
-              Contact Info
+              Contact &amp; Campuses
             </h4>
-            <div className="space-y-3 text-xs">
-              <div className="flex items-start gap-3">
-                <i className="fa-solid fa-envelope text-sm text-[#c88132] mt-0.5"></i>
+            <div className="space-y-3.5 text-xs">
+              <div className="flex items-start gap-2.5">
+                <i className="fa-solid fa-store text-sm text-[#c88132] mt-0.5"></i>
                 <div>
-                  <span className="block font-medium text-gray-200">Email:</span>
-                  <a href={`mailto:${SALON_INFO.email}`} className="text-gray-300 hover:text-white">
-                    {SALON_INFO.email}
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <i className="fa-solid fa-phone text-sm text-[#c88132] mt-0.5"></i>
-                <div>
-                  <span className="block font-medium text-gray-200">Phone:</span>
-                  <a href={`tel:${SALON_INFO.phone}`} className="text-gray-300 hover:text-white font-semibold">
-                    {SALON_INFO.phoneDisplay}
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <i className="fa-solid fa-location-dot text-sm text-[#c88132] mt-0.5"></i>
-                <div>
-                  <span className="block font-medium text-gray-200">Address:</span>
+                  <span className="block font-semibold text-gray-200">Indore Salon Hub:</span>
                   <span className="text-gray-300 leading-relaxed block">
-                    {SALON_INFO.location}
+                    Plot 17, <strong className="text-amber-400 font-bold bg-amber-950/60 px-1 py-0.5 rounded">THE HUB</strong>, Scheme 78, Vijay Nagar, Indore
                   </span>
+                  <a href={`tel:${SALON_INFO.phone}`} className="text-[#c88132] hover:text-white font-bold block mt-0.5">
+                    +91 {SALON_INFO.phoneDisplay}
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-2.5 pt-2 border-t border-gray-800">
+                <i className="fa-solid fa-graduation-cap text-sm text-[#c88132] mt-0.5"></i>
+                <div>
+                  <span className="block font-semibold text-gray-200">Academy Admissions (Indore Hub):</span>
+                  <span className="text-gray-300 leading-relaxed block">
+                    Plot 17, <strong className="text-amber-400 font-bold bg-amber-950/60 px-1 py-0.5 rounded">THE HUB</strong>, Scheme 78, Vijay Nagar, Indore
+                  </span>
+                  <div className="text-gray-300 font-medium space-x-1.5 mt-0.5">
+                    <a href="tel:8319504104" className="hover:text-amber-300 text-white font-bold">8319504104</a>
+                    <span>·</span>
+                    <a href="tel:8319527707" className="hover:text-amber-300 text-white font-bold">8319527707</a>
+                    <span>·</span>
+                    <a href="tel:07554057210" className="hover:text-amber-300">0755 4057210</a>
+                  </div>
+                  <a href="mailto:info@elanbeautyacademy.in" className="text-[#c88132] hover:text-white block text-[11px] mt-0.5">
+                    info@elanbeautyacademy.in
+                  </a>
                 </div>
               </div>
             </div>

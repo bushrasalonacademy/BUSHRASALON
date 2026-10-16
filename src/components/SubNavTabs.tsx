@@ -1,6 +1,6 @@
 import React from 'react';
 
-export type TabType = 'overview' | 'services' | 'offers' | 'reviews' | 'gallery' | 'faqs' | 'contact';
+export type TabType = 'overview' | 'services' | 'academy' | 'offers' | 'reviews' | 'gallery' | 'faqs' | 'contact';
 
 interface SubNavTabsProps {
   activeTab: TabType;
@@ -16,6 +16,7 @@ export const SubNavTabs: React.FC<SubNavTabsProps> = ({
   const tabs: { id: TabType | 'book'; label: string; isAction?: boolean }[] = [
     { id: 'overview', label: 'Overview' },
     { id: 'services', label: 'Services & Pricing' },
+    { id: 'academy', label: 'Academy & Courses' },
     { id: 'offers', label: 'Offers & VIP Packages' },
     { id: 'reviews', label: 'Reviews & Ratings' },
     { id: 'gallery', label: 'Photos & Ambience' },

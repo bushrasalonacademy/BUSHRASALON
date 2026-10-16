@@ -7,7 +7,7 @@ interface MobileBottomNavProps {
 
 export const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ onOpenShare }) => {
   const mapAddress = SALON_INFO.location;
-  const googleMapsUrl = 'https://maps.google.com/?q=Vijay+Nagar+Indore+Bushra+Salon';
+  const googleMapsUrl = "https://maps.google.com/?q=Bushra's+Salon+%26+Academy+The+Hub+Scheme+78+Vijay+Nagar+Indore";
 
   const handleShareWhatsApp = () => {
     const text = `Check this location:\n📍 Address: ${mapAddress}\n🗺️ Map: ${googleMapsUrl}`;

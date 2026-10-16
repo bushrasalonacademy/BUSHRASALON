@@ -24,8 +24,8 @@ FN:Bushra's Salon & Academy - Vijay Nagar Indore
 N:Academy;Bushra's Salon;;;
 ORG:Bushra's Salon & Academy
 TEL;TYPE=CELL,VOICE:+919630204104
-EMAIL:info@bushrasalon.com
-ADR;TYPE=WORK:;;Plot No 02, Near Vijay Nagar Square, Scheme 78;Vijay Nagar, Indore;Madhya Pradesh;452010;India
+EMAIL:bushra.salon.academy@gmail.com
+ADR;TYPE=WORK:;;Plot No. 17, The Hub, Scheme 78;Vijay Nagar, Indore;Madhya Pradesh;452010;India
 URL:https://bushrasalon.com
 NOTE:Luxury Hair, Skin, Makeup, Nails & Beauty Academy in Indore
 END:VCARD`;
@@ -53,7 +53,7 @@ END:VCARD`;
       onSelectTab('contact');
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
-      window.open('https://maps.google.com/?q=Vijay+Nagar+Indore+Bushra+Salon', '_blank');
+      window.open("https://maps.google.com/?q=Bushra's+Salon+%26+Academy+The+Hub+Scheme+78+Vijay+Nagar+Indore", '_blank');
     }
   };
 
@@ -75,7 +75,9 @@ END:VCARD`;
 
             <p className="text-xs sm:text-sm text-gray-600 flex items-center gap-2 pt-1 font-medium">
               <i className="fa-solid fa-location-dot text-[#c88132] text-sm flex-shrink-0"></i>
-              <span>{SALON_INFO.location}</span>
+              <span>
+                Plot No. 17, <strong className="text-amber-950 font-bold bg-amber-100/90 px-1.5 py-0.5 rounded border border-amber-300/80">THE HUB</strong>, Scheme No 78, Part II, Vijay Nagar, Indore
+              </span>
             </p>
           </div>
 
@@ -113,7 +115,7 @@ END:VCARD`;
                   className="inline-flex items-center gap-2.5 border border-emerald-200 bg-emerald-50/60 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-emerald-900 hover:border-emerald-400 transition-colors shadow-2xs"
                 >
                   <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                  <span>Open Today · 10:00 AM – 08:30 PM</span>
+                  <span>Open Today · 10:30 AM – 09:30 PM</span>
                   <i className={`fa-solid ${timingOpen ? 'fa-angle-up' : 'fa-angle-down'} text-xs text-emerald-700`}></i>
                 </button>
 
@@ -124,13 +126,9 @@ END:VCARD`;
                       <i className="fa-solid fa-clock text-[#2b161b]"></i>
                     </div>
                     <div className="p-4 text-xs space-y-2.5 text-gray-700">
-                      <div className="flex justify-between py-1 border-b border-gray-100">
+                      <div className="flex justify-between py-1">
                         <span className="font-medium">Monday - Sunday:</span>
-                        <span className="font-bold text-gray-900">10:00 AM – 08:30 PM</span>
-                      </div>
-                      <div className="flex justify-between py-1 text-gray-600">
-                        <span className="font-medium">Academy Sessions:</span>
-                        <span className="font-semibold text-gray-800">11:00 AM – 05:00 PM</span>
+                        <span className="font-bold text-[#c88132]">10:30 AM – 09:30 PM</span>
                       </div>
                     </div>
                   </div>
